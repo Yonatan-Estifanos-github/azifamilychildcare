@@ -1,0 +1,21 @@
+<!-- _includes/header.html -->
+<header>
+    {% include nav.html %}
+    {% if page.title == "Home" %}
+    <div class="bg-blue-50 py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Nurturing Young Minds</h1>
+            <p class="text-xl mb-8">Licensed Family Childcare in Your Community</p>
+            <a href="/book" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">Schedule a Tour</a>
+        </div>
+    </div>
+    {% endif %}
+</header>
+
+<!-- assets/js/main.js -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+}
+</script>

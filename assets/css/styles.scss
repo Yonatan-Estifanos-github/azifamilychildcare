@@ -1,0 +1,33 @@
+/* assets/css/styles.scss */
+
+
+---
+---
+@import "main";
+
+.prose {
+    max-width: 65ch;
+    color: #374151;
+}
+
+.prose h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.prose p {
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+.prose ul {
+    margin-bottom: 1.5em;
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.prose li {
+    margin-bottom: 0.5em;
+}

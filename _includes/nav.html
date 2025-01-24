@@ -1,0 +1,24 @@
+<nav class="bg-white shadow">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <a href="/" class="font-bold text-xl">Azi Family Childcare</a>
+            <div class="hidden md:flex space-x-4">
+                {% for item in site.navigation %}
+                <a href="{{ item.url }}" class="hover:text-blue-600">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+            <button class="md:hidden" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            {% for item in site.navigation %}
+            <a href="{{ item.url }}" class="block px-3 py-2 hover:bg-gray-100">{{ item.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
